@@ -672,10 +672,10 @@ class TFPredictor:
             "pdf_cells": [],
             "prediction_bboxes_page": [],
         }
-        
+
         # Initialize TF output
         tf_output = []
-        
+
         # Table bbox upscaling will scale predicted bboxes too within cell matcher
         scaled_table_bbox = [
             table_bbox[0] / scale_factor,
@@ -1033,4 +1033,3 @@ class TFPredictor:
         html_tags = [self._rev_word_map[ind] for ind in seq[1:-1]]
 
         return html_tags
-        

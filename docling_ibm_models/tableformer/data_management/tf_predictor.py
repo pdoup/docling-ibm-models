@@ -1033,3 +1033,4 @@ class TFPredictor:
         html_tags = [self._rev_word_map[ind] for ind in seq[1:-1]]
 
         return html_tags
+        
